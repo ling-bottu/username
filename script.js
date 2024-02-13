@@ -91,13 +91,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 grab: "Php 200"
             },
             image: "product10.jpg"
-        },
-
-
-
-
-
-        // Add other product objects here...
+        }
     ];
 
     products.forEach(product => {
