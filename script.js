@@ -2,99 +2,103 @@ document.addEventListener("DOMContentLoaded", function() {
     const productList = document.getElementById("product-list");
     
     const products = [
-        
-            { 
-                name: "Product 1", 
-                price: {
-                    mine: "Php 150",
-                    steal: "Php 170",
-                    grab: "Php 200"
-                },
-                image: "product1.jpg"
+        { 
+            name: "Product 1", 
+            price: {
+                mine: "Php 150",
+                steal: "Php 170",
+                grab: "Php 200"
             },
-            { 
-                name: "Product 2", 
-                price: {
-                    mine: "Php 150",
-                    steal: "Php 170",
-                    grab: "Php 200"
-                },
-                image: "product2.jpg"
+            image: "product1.jpg"
+        },
+        { 
+            name: "Product 2", 
+            price: {
+                mine: "Php 150",
+                steal: "Php 170",
+                grab: "Php 200"
             },
-            { 
-                name: "Product 3", 
-                price: {
-                    mine: "Php 150",
-                    steal: "Php 170",
-                    grab: "Php 200"
-                },
-                image: "product3.jpg"
+            image: "product2.jpg"
+        },
+        { 
+            name: "Product 3", 
+            price: {
+                mine: "Php 150",
+                steal: "Php 170",
+                grab: "Php 200"
             },
-            { 
-                name: "Product 4", 
-                price: {
-                    mine: "Php 150",
-                    steal: "Php 170",
-                    grab: "Php 200"
-                },
-                image: "product4.jpg"
+            image: "product3.jpg"
+        },
+        { 
+            name: "Product 4", 
+            price: {
+                mine: "Php 150",
+                steal: "Php 170",
+                grab: "Php 200"
             },
-            { 
-                name: "Product 5", 
-                price: {
-                    mine: "Php 150",
-                    steal: "Php 170",
-                    grab: "Php 200"
-                },
-                image: "product5.jpg"
+            image: "product4.jpg"
+        },
+        { 
+            name: "Product 5", 
+            price: {
+                mine: "Php 150",
+                steal: "Php 170",
+                grab: "Php 200"
             },
-            { 
-                name: "Product 6", 
-                price: {
-                    mine: "Php 150",
-                    steal: "Php 170",
-                    grab: "Php 200"
-                },
-                image: "product6.jpg"
+            image: "product5.jpg"
+        },
+        { 
+            name: "Product 6", 
+            price: {
+                mine: "Php 150",
+                steal: "Php 170",
+                grab: "Php 200"
             },
-            { 
-                name: "Product 7", 
-                price: {
-                    mine: "Php 150",
-                    steal: "Php 170",
-                    grab: "Php 200"
-                },
-                image: "product7.jpg"
+            image: "product6.jpg"
+        },
+        { 
+            name: "Product 7", 
+            price: {
+                mine: "Php 150",
+                steal: "Php 170",
+                grab: "Php 200"
             },
-            { 
-                name: "Product 8", 
-                price: {
-                    mine: "Php 150",
-                    steal: "Php 170",
-                    grab: "Php 200"
-                },
-                image: "product8.jpg"
+            image: "product7.jpg"
+        },
+        { 
+            name: "Product 8", 
+            price: {
+                mine: "Php 150",
+                steal: "Php 170",
+                grab: "Php 200"
             },
-            { 
-                name: "Product 9", 
-                price: {
-                    mine: "Php 150",
-                    steal: "Php 170",
-                    grab: "Php 200"
-                },
-                image: "product9.jpg"
+            image: "product8.jpg"
+        },
+        { 
+            name: "Product 9", 
+            price: {
+                mine: "Php 150",
+                steal: "Php 170",
+                grab: "Php 200"
             },
-            { 
-                name: "Product 10", 
-                price: {
-                    mine: "Php 150",
-                    steal: "Php 170",
-                    grab: "Php 200"
-                },
-                image: "product10.jpg"
-            }
-        ];
-        
+            image: "product9.jpg"
+        },
+        { 
+            name: "Product 10", 
+            price: {
+                mine: "Php 150",
+                steal: "Php 170",
+                grab: "Php 200"
+            },
+            image: "product10.jpg"
+        },
+
+
+
+
+
+        // Add other product objects here...
+    ];
 
     products.forEach(product => {
         const productDiv = document.createElement("div");
@@ -178,5 +182,4 @@ document.addEventListener("DOMContentLoaded", function() {
             console.error('Error sending user action:', error);
         });
     }
-    
 });
