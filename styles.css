@@ -1,0 +1,196 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; 
+}
+
+header {
+    background-color: #f7e2e2; 
+    color: #ffffff; 
+    text-align: center;
+    padding: 1em 0;
+    position: relative; 
+}
+
+h1 {
+    margin: 0;
+    font-size: 5em;
+}
+
+#product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 5em;
+}
+
+.product {
+    width: 300px;
+    border: 1px solid #c3efdf;
+    border-radius: 10px;
+    padding: 1em;
+    margin-bottom: 1em;
+    background-color: rgba(220, 244, 229, 0.8); 
+    box-shadow: 0 2px 4px rgba(226, 222, 222, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.product:hover {
+    transform: translateY(-14px);
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+
+.product h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #264231;
+}
+
+.product p {
+    margin-bottom: 0.5em;
+    font-size: 1.2em;
+    color: #666666;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; 
+}
+
+button {
+    background-color: #9ac092;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #dc4372;
+}
+
+.about-button,
+.products-button,
+.contact-button {
+    background-color: #c9c4c7; 
+    color: #030303;
+    border: none;
+    padding: 15px 20px; 
+    font-size: 18px; 
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.about-button:hover,
+.products-button:hover,
+.contact-button:hover {
+    background-color: #ff8192; 
+
+}
+#about-text {
+    background-color: rgba(248, 245, 245, 0.8);
+    padding: 50px; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease; 
+}
+
+
+#about-text:hover {
+    background-color: #ff8192; 
+}
+
+/
+#about-text h2 {
+    font-size: 2em; 
+    color: #333; 
+    transition: font-size 0.3s ease; 
+}
+
+
+#about-text:hover h2 {
+    font-size: 2.2em;
+}
+
+
+
+
+
+
+#products {
+    background-color: rgba(195, 230, 203, 0.8); 
+    padding: 50px; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease; 
+}
+
+
+#products:hover {
+    background-color: rgba(161, 214, 166, 0.8); 
+}
+
+
+#products h2 {
+    font-size: 2em; 
+    color: #333; 
+    transition: font-size 0.3s ease; 
+}
+
+
+#products:hover h2 {
+    font-size: 2.2em; 
+}
+
+
+
+
+#contact:hover {
+    background-color: #e8d5d5; 
+}
+
+
+#contact h2 {
+    font-size: 2em; 
+    color: #333; 
+    transition: font-size 0.3s ease; 
+}
+
+
+#contact:hover h2 {
+    font-size: 2.2em; 
+}
+#about-text {
+    opacity: 0;
+    animation: flicker 2s ease-in-out forwards;
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+

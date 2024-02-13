@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fusion Fits</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-kr1QQE7Hz7DZst7L7mXXDsa6ftFFtG6vj8Qpo8JY8SpIcC1fghukmH/Qw6yuTBr5Cikb1f61YhSBwzSj+nv3cA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1em;
+        }
+        .logo img {
+            width: 150px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .contact-info {
+            text-align: center;
+            margin-top: 1px;
+        }
+        .contact-info i {
+            margin-right: 5px;
+        }
+        .contact-info a {
+            color: #333;
+            text-decoration: none;
+        }
+        .button-container {
+            text-align: right; /* Align the content to the right */
+            margin-top: 10px;
+            margin-bottom: 20px; /* Add margin at the bottom */
+        }
+        .button-container button {
+            background-color: #abd0a4;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .button-container button:hover {
+            background-color: #dc4372;
+        }
+
+        .separated-buttons button {
+            margin-right: 10px;
+        }
+        #about h2 {
+        text-align: center; 
+        margin-top: 70px; 
+    }
+
+        #products h2 {
+        text-align: center; 
+        margin-top: 90px; 
+    }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="mylogo.jpg" alt="My Logo">
+        </div>
+        <div class="sections">
+            <button onclick="window.location.href='#about'">About Us</button>
+            <button onclick="window.location.href='#products'">Products</button>
+            <button onclick="window.location.href='#contact'">Contact Us</button>
+        </div>
+    </header>
+<center>   
+    <h2>Order Form</h2>
+    <p>Once you submit the form, I will personally process your request and send you a confirmation email with further details regarding your order status and shipment.</p>
+
+<p>If you have any questions or require assistance, feel free to reach out to me directly at [https://www.facebook.com/gambitqueens94/].</p>
+
+</center>
+    
+    <form id="order-form" class="form-container">
+        <div>
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" required>
+        </div>
+        <div>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+        </div>
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+        </div>
+        <div>
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select Gender</option>
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+            </select>
+        </div>
+        <div>
+            <label for="Email">Email:</label>
+            <input type="text" id="Email" name="Email" required>
+        </div>
+        <div>
+            <label for="order">Order:</label>
+            <textarea id="order" name="order" required></textarea>
+        </div>
+        <button type="submit">Place Order</button>
+    </form>
+
+    
+    <div id="thank-you-message" style="display: none;">
+        <center>  <p>Thank you for submitting your order! We will review it and send you updates via email.</p> </center>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const form = document.getElementById("order-form");
+            const thankYouMessage = document.getElementById("thank-you-message");
+
+            form.addEventListener("submit", function(event) {
+                event.preventDefault(); // Prevent the form from submitting
+
+                // Get form data
+                const formData = new FormData(form);
+
+                // Display submitted data
+                const submittedData = {};
+                formData.forEach((value, key) => {
+                    submittedData[key] = value;
+                });
+                console.log(submittedData);
+
+                // Show thank you message
+                thankYouMessage.style.display = "block";
+            });
+        });
+    </script>
+</body>
+</html>
+    
+    <style>
+        #order-form {
+            max-width: 350px;
+            margin: 0 auto;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9c9;
+        }
+    
+        .form-group {
+            margin-bottom: 10px;
+        }
+    
+        label {
+            display: block;
+            margin-bottom: 3px;
+            font-weight: bold;
+            font-size: 12px;
+        }
+    
+        input[type="text"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 6px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+            font-size: 12px;
+        }
+    
+        button[type="submit"] {
+            background-color: #dc4372;
+            color: #fff;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+    
+        button[type="submit"]:hover {
+            background-color: #c6264e;
+        }
+    </style>
+    
+
+    </script>
+</body>
+</html>
+
+    
+
+    <!-- About Us Section -->
+    <center>
+        
+        <div id="about-text">
+            <p><h2>About Us</h2></p>
+            <p>Welcome to Fusion Fits</p>
+            <p>Your Exclusive Collection of Assorted Tops!</p>
+            <p>At Fusion Fits, we curate a diverse range of tops, reflecting our passion for quality, diversity, and individuality in fashion.</p>
+            <p>Each piece tells a unique story, from trendy statements to timeless classics, exceeding your expectations in style, comfort, and quality.</p>
+            <p>As the sole proprietor, I personally select and curate each item with a commitment to excellence, ensuring tops that elevate your wardrobe and reflect your unique style.</p>
+            <p>Whether it's a work blouse, cozy sweater, or chic night-out top, Fusion Fits has you covered.</p>
+            <p>Join us on a journey celebrating the art of fashion and self-expression through our exclusive assorted tops collection.</p>
+            <p>Discover the fusion of style, versatility, and quality with Fusion Fits – because your wardrobe deserves the best.</p>
+        </div>
+        
+        
+        
+
+    <!-- Product List Section -->
+    <div id="products">
+        <h2>Products</h2>
+        <div id="product-list">
+        </div>
+    </div>
+
+    <!-- Contact Us Section -->
+    <div id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <div class="email">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:glenadolor17@gmail.com">Email: glenadolor17@gmail.com</a>
+            </div>
+            <div class="phone">
+                <i class="fas fa-phone"></i>
+                <a href="tel:09654624330"> Phone #: 0965-462-4330</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Make sure to include your JavaScript file -->
+</center>
+</body>
+</html>
