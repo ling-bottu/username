@@ -159,7 +159,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function sendUserAction(action, productName) {
         // Send POST request to backend server
-        fetch('/track-action', {
+        fetch('http://localhost:4000/user-action', { // Use port 4000 for the backend server
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
